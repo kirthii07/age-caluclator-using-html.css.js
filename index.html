@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<section class="content">
+<div class="row">
+<label for="dob">Birth date</label>
+<div class="controls">
+<input id="dob" type="date" required aria-describedby="dobHelp" />
+<p id="dobHelp" class="sub">We never send this anywhere. Calculations happen in your browser.</p>
+<div class="btns">
+<button id="calcBtn" aria-label="Calculate age">Calculate</button>
+<button id="resetBtn" class="btn-secondary" aria-label="Reset">Reset</button>
+<span id="status" class="sub" role="status" aria-live="polite"></span>
+</div>
+</div>
+</div>
+
+
+<div id="messages" class="row" aria-live="polite"></div>
+
+
+<div class="cards" id="results" hidden>
+<div class="card">
+<h3>Age</h3>
+<div class="big" id="ageYMD">—</div>
+</div>
+<div class="card">
+<h3>Total Days Lived</h3>
+<div class="big" id="daysLived">—</div>
+</div>
+<div class="card">
+<h3>Next Birthday In</h3>
+<div class="big" id="nextBday">—</div>
+</div>
+<div class="card">
+<h3>Weekday Born</h3>
+<div class="big" id="weekday">—</div>
+</div>
+</div>
+</section>
+
+
+<footer>
+Tip: The date field is limited to today and earlier to avoid future dates.
+</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
